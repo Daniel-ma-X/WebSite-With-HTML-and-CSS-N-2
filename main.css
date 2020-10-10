@@ -40,7 +40,8 @@ body {
 /*Main*/
 
 main {
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;;
 }
 
 main .main-fondo {
@@ -84,9 +85,9 @@ main .main-fondo p {
 /*Main Section Authors*/
 
 main .content  {
-	width: 90%;
+	/* width: 90%; */
 	height: auto;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 
 main .box {
@@ -107,7 +108,7 @@ main .box h2 {
 }
 
 main .box p {
-	font-size: 2.2rem;
+	font-size: 1.9rem;
 	text-align: justify;
 	line-height: 2.7rem;
 }
@@ -138,11 +139,97 @@ main .box span {
 
 .box .section-btn{
 	max-width: 170px;
+	width: 100%;
 	background: #2d3436;
 	color: white;
 	border: none;
 	padding: 10px 15px;
-	margin: 15px 0;
+	margin: 15px auto;
+	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
+}
+
+/*Encuestas*/
+
+.encuesta-table h2 {
+	text-align: center;
+	font-size: 2.6rem;
+	font-weight: bold;
+	margin: 30px 0 15px 0;
+}
+
+.encuesta-table table {
+	display: flex;
+	justify-content: center;
+
+}
+
+.encuesta-table tr,
+.encuesta-table tr td {
+	padding: 8px;
+	font-size: 1.7rem;
+	border: 1px solid #d63031;
+}
+
+.encuesta-table blockquote {
+	text-align: center;
+	font-size: 1.9rem;
+	margin-top: 10px; 
+}
+
+hr {
+	height: 4px;
+	margin: 20px 0;
+	background-color: #d63031;
+}
+
+/*Más Información*/
+
+main .more-info {
+	background-color: #212121;
+	color: white;
+	padding: 10px;
+}
+
+.info-container .subtitle {
+	font-size: 2.8rem;
+	margin: 10px 0;
+	font-weight: 700;
+}
+
+.info-container h2 {
+	font-size: 2.4rem;
+	margin-bottom: 5px;
+}
+
+.info-content {
+	background-color: #323131;
+	padding: 7px;
+	margin: 10px 0;
+}
+
+.info-content p {
+	font-size: 1.7rem;
+	line-height: 2.7rem;
+}
+
+/*Section Fondo-2*/
+
+.fondo-2 {
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 2.7rem;
+	color: whitesmoke;
+	width: 100%;
+	height: 200px;
+	border: 1px solid black;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+
+	background-image: url('./images/fondo-2.jpg');
+	background-position: center;
+	background-size: cover;
 }
