@@ -35,8 +35,17 @@ body {
 	font-weight: 600;
 }
 
+.header-head .burger-menu {
+	font-size: 2.8rem;
+	color: #d63031;
+}
 .header-head nav {
 	display: none;
+}
+
+
+.header-head nav ul li a:hover {
+	border-bottom: 1px solid #212121;
 }
 
 /*Main*/
@@ -94,7 +103,7 @@ main .content  {
 
 main .box {
 	width: 100%;
-	max-width: 500px;
+	/* max-width: 500px; */
 	height: auto;
 
 	border: 2px solid #2d3436;
@@ -230,6 +239,7 @@ main .more-info {
 
 	display: flex;
 	align-items: center;
+	justify-content: center;
 
 	background-image: url('./images/fondo-2.jpg');
 	background-position: center;
@@ -319,4 +329,162 @@ footer {
 
 footer span {
 	color: #d63031;
+}
+
+/*Media Queries*/
+
+/*Tamaño medio -- 480px*/
+@media screen and (min-width: 480px) {
+	.fondo-2 {
+
+	}
+}
+
+/*Tamaño medio -- 560px*/
+@media screen and (min-width: 560px) {
+	.content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+
+	.content .tb-box-3,
+	.content .tb-box-4 {
+		margin-top: 0;
+	}
+	.fondo-2 {
+		height: 400px;
+	}
+}
+/*Tablet -- 768px*/
+@media screen and (min-width: 768px) {
+
+	.header-head .burger-menu {
+		display: none;
+	}
+
+	.header-head nav {
+		display: inline-block;
+	}
+
+	.header-head nav ul {
+		list-style: none;
+	}
+	
+	.header-head nav ul li {
+		display: inline-block;
+	}
+	
+	.header-head nav ul li a {
+		font-size: 1.8rem;
+		padding: 10px;
+		text-decoration: none;
+		font-weight: 500;
+		color: black;
+		cursor: pointer;
+	}
+
+	.header-head nav {
+		display: inline-block;
+	}
+
+	.info-content {
+		margin: 20px 0;
+	}
+
+	.content {
+		grid-gap: 15px;
+	}
+	main .main-fondo {
+		background-image: url(https://free4kwallpapers.com/uploads/originals/2020/05/09/dj-headphones-by-mikael-kristenson-wallpaper.jpg);
+	}
+}
+
+/*Desktop -- 1024px*/
+
+@media screen and (min-width: 1024px) {
+
+	.header-head nav ul li a {
+		font-size: 2.2rem;
+	}
+	header .header-head h2 {
+		font-size: 5rem;
+
+	}
+
+	main .main-fondo {
+		height: 500px;
+	}
+
+	main .main-fondo h1 {
+		font-size: 6rem;
+	}
+
+	main .main-fondo p {
+		font-size: 2.6rem;
+	}
+
+	main .box h2 {
+		font-size: 3.3rem;
+	}
+
+	main .box p {
+		font-size: 2.6rem;
+		line-height: 3rem;
+	}
+
+	.section-btn {
+		font-size: 2rem;
+	}
+
+	.encuesta-table h2 {
+		font-size: 3rem;
+	}
+
+	.encuesta-table tr,
+	.encuesta-table tr td,
+	blockquote {
+		font-size: 2.3rem;
+	}
+
+	.info-container .subtitle {
+		font-size: 3.3rem;
+		text-align: center;
+		grid-column: 1 / -1;
+	}
+
+	.info-container {
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.info-content {
+		margin: 0;
+	}
+
+	.last-content {
+		grid-column: 1 / -1;
+		text-align: center;
+	}
+	
+	.fondo-2 p {
+		font-size: 4rem;
+	}
+
+	.compras h2 {
+		font-size: 3.3rem;
+	}
+
+	.compras h3 {
+		font-size: 2.9rem;
+	}
+
+	.item-info p {
+		font-size: 3rem;
+	}
+
+	footer {
+		font-size: 3.3rem;
+	}
 }
